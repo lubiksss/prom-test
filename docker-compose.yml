@@ -12,7 +12,7 @@ services:
     ports: 
       - 9090:9090
     volumes:
-      - /Users/jake_kakao/workspace/prom-test/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
 
   grafana:
     image: grafana/grafana
